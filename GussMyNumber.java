@@ -7,7 +7,7 @@ public class GussMyNumber {
         int myNumber=(int)(Math.random()*100);
         
         //taking the guess number from user
-        Scanner sc= new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         int userNumber;
         System.out.println("To guess the number Enter a number between 1 to 100" + "\n" + "To stop enter -1 ");
         userNumber=sc.nextInt();
@@ -24,7 +24,7 @@ public class GussMyNumber {
             System.out.println("To guess the number Enter a number between 1 to 100" + "\n" + "To stop enter -1");
             userNumber=sc.nextInt();
         }
-        
+        sc.close();
         if(userNumber==-1){
             System.out.println("You were so close"+ " the number was : " + myNumber);
         }else{
