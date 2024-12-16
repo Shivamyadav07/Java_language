@@ -185,6 +185,53 @@ public class PatternS1{
             }
             System.out.println();
         }
-    }
 
+        
+        System.out.println("The pattern 10");
+        /*  This is the patter of the problem statement
+        * * *        * *
+          * *        *
+            *
+        */
+        int c=n/2;
+        for(int i=0;i<=c;i++){
+            for(int j=0;j<i;j++){
+                System.out.print("_");
+            }
+            for(int j=i;j<=c;j++){
+                System.out.print("*");
+            }
+            for(int j=i;j<c;j++){
+                System.out.print("*");
+            }
+            for(int j=0;j<i;j++){
+                System.out.print("_");
+            }
+            System.out.println();
+
+        }
+
+        // for(int i=0;i<=n/2;i++){
+        //     for(int j=0;j<i;j++){
+        //         System.out.print(" ");
+        //     }
+        //     for(int j=0;j<n-(i+i);j++){
+        //         System.out.print("*");
+        //     }
+        //     for(int j=0;j<i;j++){
+        //         System.out.print(" ");
+        //     }
+        //     System.out.println();
+        // }
+
+        // for(int i=n;i>=1;i=i-2){
+        //     for(int j=n;j>i;j=j-2){
+        //         System.out.print(" ");
+        //     }
+        //     for(int j=1;j<=i;j++){
+        //         System.out.print("*");
+        //     }
+        //     System.out.println();
+        // }
+    }
 }
